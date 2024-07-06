@@ -1,0 +1,48 @@
+/*Cuerpo del formulario*/
+body{
+    font-family:'Lucida Sans';
+    background-color:gray;
+}
+/*Resultados*/
+#resultados{
+    border: 2px solid black;
+    display: none;
+}
+/*Imagenes*/
+.imagenes{
+    display: none;
+}
+.imagenes img{
+    width: 110%;
+    margin-top: 2%; ;
+}
+/*Formulario*/
+.formulario{
+    margin-top: 1%;
+    margin-left: 30%;
+    margin-right: 35%;
+    width:20%;
+    background-color: rgb(226, 221, 221);
+    padding: 10%;
+}
+.formulario input{
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 15px;
+    font-size: medium;
+}
+.formulario button{
+    margin-bottom: 3%;
+    padding: 4%;
+    font-family:Verdana;
+    font-size: medium;
+    background-color: rgb(112, 111, 111);
+    color: white;
+}
+.formulario button:hover{
+    background-color: rgb(186, 183, 183);
+    color: black;
+}
+.formulario h1{
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <script src="acciones/accion.js"></script>
+</head>
+<body>
+    <section class="formulario">
+        <h1>Bienvenido/a deportes ECU</h1>
+        <form class="contenidoForm" id="contenidoForm" action="">
+            <label for="nombre">Nombres completos </label><br>
+            <input type="text" id="nombre" placeholder="Coloque su nombre completo"><br>
+            <div id="error1"></div>
+            
+            <label for="apellido">Apillidos completos</label><br>
+            <input type="text" id="apellido" placeholder="Coloque su apellido completo"><br>
+            <div id="error2"></div>
+
+            <label for="edad">Edad</label><br>
+            <input type="number" id="edad" placeholder="Coloque su edad"><br>
+            <div id="error3"></div>
+
+            <label for="correo">Correo electronico</label><br>
+            <input type="text" id="correo" placeholder="Coloque su correo electronico"><br>
+            <div id="error4"></div>
+
+            <div id="resultados"></div>
+            <button type="submit" id="enviar" onclick="enviar()">Enviar</button>
+            <button type="button" id="mostrar" onclick="mostrarImagen()"> Mostrar imagenes</button>
+            
+            <div class="imagenes" id="imagen">
+                <h3>El deporte te construye disciplina</h3>
+                <img src="imagenes/imagen 01.png" alt="">
+                <img src="imagenes/imagen02.webp" alt="">
+                <img src="imagenes/imagen02.jpeg" alt=""><br>
+                <button type="button" onclick="ocultarImagen()"> Ocultar imagenes</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
