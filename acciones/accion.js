@@ -101,11 +101,18 @@ function ocultarImagen(){
     document.querySelector("body").style.backgroundColor='gray';
 }
 
-function cambiar_estilo(){
+function solo_pares(){
     var p = document.getElementsByTagName('p');
 
     for (let i=0; i<=4; i++){
-        p[i].style.fontFamily="Cursive"
+        for(let i=0; i<5; i++){
+            modulo=i%2
+            if(modulo!=0){
+                p[i].style.color="orange"
+                p[i].style.fontFamily="Cursive"
+                p[i].style.background="black"
+            }
+        }
     }
 }
 
@@ -119,17 +126,19 @@ function pintar_titulos(){
     }
 }
 
-function solo_pares(){
+function solo_impares(){
     var p = document.getElementsByTagName('p');
-    for(let i=0; i<5; i++){
-        modulo=i%2
-        if(modulo==0){
-            p[i].style.color="orange"
-        }else{
-            p[i].style.color="green"
+
+    for (let i=0; i<=4; i++){
+        for(let i=0; i<5; i++){
+            modulo=i%2
+            if(modulo==0){
+                p[i].style.color="skyblue"
+                p[i].style.fontFamily='Trebuchet MS';
+                p[i].style.background="blue"
+            }
         }
     }
-
 }
 
 function deshacer(){
@@ -141,6 +150,7 @@ function deshacer(){
         h3[i].style.color='initial';
         h1[i].style.color='initial';
         p[i].style.color='initial';
+        p[i].style.backgroundColor='initial';
     }
 }
 
