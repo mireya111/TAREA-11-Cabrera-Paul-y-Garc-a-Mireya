@@ -101,6 +101,14 @@ function ocultarImagen(){
     document.querySelector("body").style.backgroundColor='gray';
 }
 
+function cambiar_estilo(){
+    var p = document.getElementsByTagName('p');
+    for(let i=0; i<5; i++){
+        p[i].style.fontFamily="Cursive"
+        p[i].style.border="4px solid purple";
+    }
+}
+
 function solo_pares(){
     var p = document.getElementsByTagName('p');
 
@@ -153,6 +161,7 @@ function deshacer(){
         p[i].style.color='initial';
         p[i].style.backgroundColor='initial';
         p[i].style.fontSize='initial';
+        p[i].style.border="initial";
     }
 }
 
