@@ -108,6 +108,7 @@ function solo_pares(){
         for(let i=0; i<5; i++){
             modulo=i%2
             if(modulo!=0){
+                p[i].style.fontSize='20px';
                 p[i].style.color="orange"
                 p[i].style.fontFamily="Cursive"
                 p[i].style.background="black"
@@ -151,6 +152,7 @@ function deshacer(){
         h1[i].style.color='initial';
         p[i].style.color='initial';
         p[i].style.backgroundColor='initial';
+        p[i].style.fontSize='initial';
     }
 }
 
