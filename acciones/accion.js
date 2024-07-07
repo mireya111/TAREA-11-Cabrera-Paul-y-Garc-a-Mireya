@@ -101,6 +101,49 @@ function ocultarImagen(){
     document.querySelector("body").style.backgroundColor='gray';
 }
 
+function cambiar_estilo(){
+    var p = document.getElementsByTagName('p');
+
+    for (let i=0; i<=4; i++){
+        p[i].style.fontFamily="Cursive"
+    }
+}
+
+function pintar_titulos(){
+    var h3 = document.getElementsByTagName('h3');
+    var h1 = document.getElementsByTagName('h1');
+
+    for (let i=0; i<=4; i++){
+        h3[i].style.color="purple";
+        h1[i].style.color="Blue";
+    }
+}
+
+function solo_pares(){
+    var p = document.getElementsByTagName('p');
+    for(let i=0; i<5; i++){
+        modulo=i%2
+        if(modulo==0){
+            p[i].style.color="orange"
+        }else{
+            p[i].style.color="green"
+        }
+    }
+
+}
+
+function deshacer(){
+    var p = document.getElementsByTagName('p');
+    var h3 = document.getElementsByTagName('h3');
+    var h1 = document.getElementsByTagName('h1');
+    for (let i=0; i<=4; i++){
+        p[i].style.fontFamily='initial';
+        h3[i].style.color='initial';
+        h1[i].style.color='initial';
+        p[i].style.color='initial';
+    }
+}
+
 
 
 

@@ -1,6 +1,6 @@
 /*Cuerpo del formulario*/
 body{
-    font-family:'Lucida Sans';
+    font-family:inherit;
     background-color:gray;
 }
 /*Resultados*/
